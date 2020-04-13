@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
           ),
           SizedBox(height: 20),
           Text(
-            'Dernières Informations',
+            'Dernières Informations ',
             style: Theme.of(context)
                 .textTheme
                 .headline1
