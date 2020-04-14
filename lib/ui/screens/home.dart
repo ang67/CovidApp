@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
             width: MediaQuery.of(context).size.width * 0.95,
             height: 100,
             child: Text("blablablabla"),
-            color: Colors.black,
+            color: Colors.white,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
