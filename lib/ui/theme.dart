@@ -8,13 +8,13 @@ ThemeData buildBaseTheme() {
     brightness: Brightness.light,
     primaryColor: Colors.red[500],
     accentColor: Colors.blue[300],
-    fontFamily: 'Georgia',
+    fontFamily: null,
 
     textTheme: TextTheme(
           
           headline1: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
-          headline2: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-          bodyText1: TextStyle(fontSize: 16.0),
+          headline2: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+          bodyText1: TextStyle(fontSize: 17.0),
           bodyText2: TextStyle(fontSize: 12.0),
 
     )

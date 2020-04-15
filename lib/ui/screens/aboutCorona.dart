@@ -1,4 +1,6 @@
+import 'package:easy_web_view/easy_web_view.dart';
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class AboutCoronaPage extends StatefulWidget {
   @override
@@ -12,10 +14,13 @@ class _AboutCoronaPageState extends State<AboutCoronaPage> {
         appBar: AppBar(
           title: Text('Bon à savoir'),
         ),
-        body: Center(
-          child: Container(
-            child: Text('Bon à savoir'),
-          ),
+        body: Builder(builder: (BuildContext context) {
+        return WebView(
+          initialUrl: 'https://www.arcgis.com/apps/opsdashboard/index.html#/85320e2ea5424dfaaa75ae62e5c06e61',
+          javascriptMode: JavascriptMode.unrestricted,
+          
+        );
+  },
         ));
   }
-}
+  }

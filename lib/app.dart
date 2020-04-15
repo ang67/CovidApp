@@ -1,7 +1,7 @@
 
 import 'package:covidapp/ui/base.dart';
 import 'package:covidapp/ui/screens/aboutCorona.dart';
-import 'package:covidapp/ui/screens/statsPage.dart';
+import 'package:covidapp/ui/screens/statsPages/statsPage.dart';
 import 'package:covidapp/ui/theme.dart';
 import 'package:flutter/material.dart';
 
