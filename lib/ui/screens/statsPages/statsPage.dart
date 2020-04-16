@@ -1,6 +1,6 @@
 import 'package:covidapp/ui/screens/statsPages/countriesTab.dart';
 import 'package:covidapp/ui/screens/statsPages/mapPage.dart';
-import 'package:covidapp/ui/screens/statsPages/totalsTab.dart';
+import 'package:covidapp/ui/screens/statsPages/totalsPage.dart';
 import 'package:flutter/material.dart';
 
 class StatsPage extends StatefulWidget {
@@ -11,6 +11,10 @@ class StatsPage extends StatefulWidget {
 }
 
 class _StatsPageState extends State<StatsPage> {
+
+  var total= {
+    
+  };
   static List<Widget> _kTabPages = [
     TotalsTabPage(),
     CountriesTabPage(),

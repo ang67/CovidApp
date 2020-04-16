@@ -1,5 +1,5 @@
-import 'package:covidapp/models/statsModel.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class TotalsTabPage extends StatefulWidget {
   @override
@@ -7,6 +7,9 @@ class TotalsTabPage extends StatefulWidget {
 }
 
 class _TotalsTabPageState extends State<TotalsTabPage> {
+  Total total = Total(2000984, 128071, 185);
+  final formatter = new NumberFormat("#,###");
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,7 +27,7 @@ class _TotalsTabPageState extends State<TotalsTabPage> {
                       color: Colors.black45,
                       fontSize: 40.0,
                     )),
-                Text('2 000 984',
+                Text("${formatter.format(total.getConfirmed())}",
                     style: TextStyle(
                       color: Colors.yellow[800],
                       fontSize: 55.0,
@@ -35,13 +38,13 @@ class _TotalsTabPageState extends State<TotalsTabPage> {
                       color: Colors.black45,
                       fontSize: 40.0,
                     )),
-                Text('128 071',
+                Text('${formatter.format(total.getDeath())}',
                     style: TextStyle(
                       color: Colors.red,
                       fontSize: 55.0,
                     )),
                 Divider(),
-                Text('185',
+                Text("${formatter.format(total.getCountry())}",
                     style: TextStyle(
                       color: Colors.green,
                       fontSize: 55.0,
@@ -55,5 +58,25 @@ class _TotalsTabPageState extends State<TotalsTabPage> {
             ),
           )),
     );
+  }
+}
+
+class Total {
+  int confirmed;
+  int death;
+  int contry;
+
+  Total(this.confirmed, this.death, this.contry);
+
+  int getConfirmed() {
+    return this.confirmed;
+  }
+
+  int getDeath() {
+    return this.death;
+  }
+
+  int getCountry() {
+    return this.contry;
   }
 }

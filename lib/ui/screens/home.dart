@@ -7,7 +7,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _current = 0;
   List imgList = [
     'assets/carousel_1.jpg',
     'assets/carousel_2.jpg',
@@ -32,7 +31,6 @@ class _HomePageState extends State<HomePage> {
             autoPlayAnimationDuration: Duration(milliseconds: 2000),
             onPageChanged: (index) {
               setState(() {
-                _current = index;
               });
             },
             items: imgList.map((imgUrl) {
