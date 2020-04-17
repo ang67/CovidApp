@@ -7,11 +7,13 @@ class TotalsTabPage extends StatefulWidget {
 }
 
 class _TotalsTabPageState extends State<TotalsTabPage> {
-  Total total = Total(2000984, 128071, 185);
-  final formatter = new NumberFormat("#,###");
+  
 
   @override
   Widget build(BuildContext context) {
+    Total total = Total(2000984, 128071, 185);
+  final formatter = new NumberFormat("#,###");
+  print(total.getConfirmed());
     return Container(
       child: Container(
           margin: EdgeInsets.all(3),

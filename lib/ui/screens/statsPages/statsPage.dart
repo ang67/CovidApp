@@ -1,4 +1,4 @@
-import 'package:covidapp/ui/screens/statsPages/countriesTab.dart';
+import 'package:covidapp/ui/screens/statsPages/countriesPage.dart';
 import 'package:covidapp/ui/screens/statsPages/mapPage.dart';
 import 'package:covidapp/ui/screens/statsPages/totalsPage.dart';
 import 'package:flutter/material.dart';
