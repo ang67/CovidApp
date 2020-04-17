@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
             height: MediaQuery.of(context).size.height / 3.5,
             initialPage: 0,
             enlargeCenterPage: true,
-            autoPlay: false,
+            autoPlay: true,
             autoPlayInterval: Duration(seconds: 5),
             autoPlayAnimationDuration: Duration(milliseconds: 2000),
             onPageChanged: (index) {
@@ -50,8 +50,7 @@ class _HomePageState extends State<HomePage> {
             'Dernières Informations ',
             style: Theme.of(context)
                 .textTheme
-                .headline1
-                .copyWith(color: Colors.black),
+                .headline1,
           ),
           Container(
             width: MediaQuery.of(context).size.width * 0.95,

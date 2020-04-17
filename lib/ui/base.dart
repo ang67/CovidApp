@@ -36,8 +36,8 @@ class _BaseScreenState extends State<BaseScreen> {
         title: Text('Trace'),
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.timeline),
-        title: Text('Statistiques'),
+        icon: Icon(Icons.help),
+        title: Text('Aide'),
       ),
     ];
     assert(_kTabPages.length == _kBottmonNavBarItems.length);
@@ -45,7 +45,9 @@ class _BaseScreenState extends State<BaseScreen> {
       backgroundColor: Colors.white,
       elevation: 10,
       items: _kBottmonNavBarItems,
-      selectedItemColor: null,
+      selectedLabelStyle: TextStyle(fontSize: 16.5),
+      unselectedLabelStyle: TextStyle(fontSize: 14),
+
       currentIndex: _currentTabIndex,
       type: BottomNavigationBarType.fixed,
       onTap: (int index) {
