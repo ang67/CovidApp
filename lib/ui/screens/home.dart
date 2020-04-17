@@ -109,6 +109,3 @@ class _HomePageState extends State<HomePage> {
         ]));
   }
 }
-
-class StatsPage {
-}

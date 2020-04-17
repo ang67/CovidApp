@@ -33,7 +33,7 @@ class _BaseScreenState extends State<BaseScreen> {
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.map),
-        title: Text('Localisation'),
+        title: Text('Trace'),
       ),
       BottomNavigationBarItem(
         icon: Icon(Icons.timeline),
@@ -59,7 +59,9 @@ class _BaseScreenState extends State<BaseScreen> {
       appBar: AppBar(
         title: Text('COVIDAPP'),
         actions: <Widget>[
+          IconButton(icon: Icon(Icons.notifications_active), onPressed: () => {}),
           IconButton(icon: Icon(Icons.search), onPressed: () => {}),
+          
         ],
       ),
       body: _kTabPages[_currentTabIndex],
