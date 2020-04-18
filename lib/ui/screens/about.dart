@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart' as url_launcher;
 import '../constantes.dart';
 
-
 class AboutPage extends StatelessWidget {
   const AboutPage({Key key}) : super(key: key);
 
@@ -53,10 +52,10 @@ class AboutPage extends StatelessWidget {
       ),
     );
     return Scaffold(
-          appBar: AppBar(
-            title: Text('A PROPOS'),
-          ),
-          body: ListView(
+      appBar: AppBar(
+        title: Text('A PROPOS'),
+      ),
+      body: ListView(
         children: <Widget>[
           header,
           ...kAboutListTiles,

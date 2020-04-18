@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class MapPage extends StatefulWidget {
+class TracePage extends StatefulWidget {
   @override
-  _MapPageState createState() => _MapPageState();
+  _TracePageState createState() => _TracePageState();
 }
 
-class _MapPageState extends State<MapPage> {
+class _TracePageState extends State<TracePage> {
   @override
   Widget build(BuildContext context) {
     return Container(

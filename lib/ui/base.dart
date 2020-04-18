@@ -1,6 +1,6 @@
 import 'package:covidapp/ui/screens/diagnostic.dart';
 import 'package:covidapp/ui/screens/home.dart';
-import 'package:covidapp/ui/screens/map.dart';
+import 'package:covidapp/ui/screens/trace.dart';
 import 'package:flutter/material.dart';
 
 class BaseScreen extends StatefulWidget {
@@ -18,7 +18,7 @@ class _BaseScreenState extends State<BaseScreen> {
     final _kTabPages = <Widget>[
       HomePage(),
       DiagnosticPage(),
-      MapPage(),
+      TracePage(),
       Center(
           child: Icon(Icons.timeline,
               size: _iconSize, color: Theme.of(context).accentColor)),
