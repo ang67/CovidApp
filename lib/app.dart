@@ -1,5 +1,6 @@
 
 import 'package:covidapp/ui/base.dart';
+import 'package:covidapp/ui/screens/about.dart';
 import 'package:covidapp/ui/screens/aboutCorona.dart';
 import 'package:covidapp/ui/screens/statsPages/statsPage.dart';
 import 'package:covidapp/ui/theme.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         '/':(context) => BaseScreen(),
         '/stats':(context) => StatsPage(),
         '/aboutCorona':(context) => AboutCoronaPage(),
+        '/about':(context) => AboutPage(),
         //
       },
     );
