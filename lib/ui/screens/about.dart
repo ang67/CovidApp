@@ -29,7 +29,7 @@ class AboutPage extends StatelessWidget {
     ListTile(
       leading: Icon(Icons.open_in_new),
       title: Text('Visit my website'),
-      onTap: () => url_launcher.launch(AUTHOR_SITE),
+      onTap: (){} /*=> url_launcher.launch(AUTHOR_SITE)*/,
     ),
   ];
 
